@@ -1,5 +1,5 @@
 import { sayHello } from '@wanted/lib';
-import { Button } from '@wanted/ui';
+import { Button, Input } from '@wanted/ui';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -46,6 +46,10 @@ export default function Home() {
         </div>
 
         <Button varient="contained"> Hello From @wanted/ui</Button>
+        <div>
+          <p>Input Outline</p>
+          <Input value={'value'} varient="outlined" />
+        </div>
 
         <div className={styles.center}>
           <Image className={styles.logo} src="/next.svg" alt="Next.js Logo" width={180} height={37} priority />
